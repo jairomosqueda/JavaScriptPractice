@@ -44,16 +44,27 @@ do{
 
 //3 Write a method with a while loop to print 1 through n in square brackets. For example, if n = 6 print [1] [2] [3] [4] [5] [6]
 
+var n = parseInt(window.prompt("Please enter a number: ")), i = 1, boxes = [];
+
+do{
+    boxes.push("[" + i +"]");
+    i++;
+
+}while(i <= n)
+
+console.log(boxes);
+
 // 4 - Write a method with a while loop that computes the sum of first n positive integers: 
 // sum = 1 + 2 + 3 + … + n
 // Examples:
 // n = 5 sum = 15
 // n = 19 sum = 190 n = n + n - 1
 
-var i = 0, n = 5, r = n
+var i = 0, n = 5, sum = 0
 do{
-     r += n - 1;
+    i++;
+    sum = sum+i;
 
-}while(i < n)
+}while (i < n);
 
-console.log(r)
+console.log(sum);

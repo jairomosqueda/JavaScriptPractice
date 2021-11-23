@@ -18,5 +18,5 @@ if(businessHours(day, hour) == true){ //Regular conditional structure
 
 
 function getDayNumber(janFirstDayNumber, yearDayNumber){
-
+    
 }
